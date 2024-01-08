@@ -28,7 +28,21 @@ SECRET_KEY = 'django-insecure-upp)e^%-b02o#0@ez^1ang=(b!a%&&%#vue0t33d-l&#&mja&w
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'localhost',
+    'http://localhost',
+    'http://127.0.0.1',
+    '127.0.0.1:5173',
+    'localhost:5173',
+    'http://localhost:5173',
+    'http://127.0.0.1:5173',
+    '127.0.0.1:8000',
+    'localhost:8000',
+    'http://localhost:8000',
+    'http://127.0.0.1:8000',
+    
+]
 
 CORS_ORIGIN_ALLOW_ALL = True
 # Application definition
@@ -42,9 +56,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders'
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -52,7 +68,6 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'personalblogs.urls'

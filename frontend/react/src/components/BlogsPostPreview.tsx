@@ -1,8 +1,17 @@
+import { Link } from "react-router-dom";
+
+export type FeaturedImages = {
+  id: number;
+  blog_post: number;
+  image: string;
+  position: number
+}
 export type PostType = {
   featuredImage: string;
   title: string;
   href: string;
   desc: string;
+  id: number;
 };
 
 type PreviewProps = {
@@ -10,15 +19,19 @@ type PreviewProps = {
 };
 
 const BlogPostPreview = ({ post }: PreviewProps) => {
+  console.log(post);
   return (
     <li className="blog-post__preview">
-      <a href={post.href}>
+      <Link className="blog-post__link" to={`${post.id}`}>
         <img src={post.featuredImage} />
-        <h3>{post.title}</h3>
+        <h3 >{post.title}</h3>
         {post.desc && <p>{post.desc}</p>}
-      </a>
+      </Link>
     </li>
   );
 };
 
 export default BlogPostPreview;
+
+
+
