@@ -1,6 +1,6 @@
 from rest_framework import generics
 from .models import BlogPost, FeaturedImage
-from .serializers import BlogPostSerializer, FeaturedImageSerializer
+from .serializers import BlogPostSerializer, FeaturedImageSerializer, BlogPostMarkdownSerializer
 
 
 class Blogs(generics.ListCreateAPIView):
@@ -9,7 +9,7 @@ class Blogs(generics.ListCreateAPIView):
     
 class Blog(generics.RetrieveUpdateAPIView, generics.DestroyAPIView):
     queryset = BlogPost.objects.all()
-    serializer_class = BlogPostSerializer
+    serializer_class = BlogPostMarkdownSerializer
     
 class BlogImages(generics.ListCreateAPIView):
     queryset = FeaturedImage.objects.all()

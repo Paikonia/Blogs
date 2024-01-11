@@ -1,4 +1,6 @@
 frontend/theme/
 frontend/react/node_modules/
+nextjs/node_modules/
+nextjs/.next/
 db.sqlite3
 *.pyc

@@ -17,4 +17,9 @@ class BlogPostSerializer(serializers.ModelSerializer):
         model = BlogPost
         fields =['id','layout', 'title', 'description','publish_date','excerpt', 'tags', 'featured_images']
 
-
+class BlogPostMarkdownSerializer(serializers.ModelSerializer):
+    
+    featured_images = FeaturedImageSerializer(many=True, read_only=True)
+    class Meta:
+        model = BlogPost
+        fields =['id','layout', 'title', 'description','publish_date','excerpt', 'tags', 'featured_images', 'markdown_content']
