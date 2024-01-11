@@ -199,7 +199,7 @@ nav ul {
   color: inherit;
   opacity: 0.72;
   transition: opacity linear 150ms;
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-base);
 }
 .nav-link:hover {
   opacity: 1;
@@ -304,7 +304,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
 }
 .hero-section__text {
   justify-self: center;
@@ -460,6 +460,10 @@ footer {
   max-lines: 3;
 }
 
+.text__section {
+  margin: var(--section-margin) auto;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   font-family: var(--theme-font-family-sans);
@@ -503,6 +507,38 @@ a {
 a:hover {
   opacity: 0.85;
   text-decoration: underline solid;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.contact-hero__section {
+  margin: var(--section-margin) auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: calc(90vh - var(--navbar-height));
+  gap: 3rem;
+}
+.contact-hero__text-section {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--theme-surface-1);
+  border-radius: var(--theme-shape-radius);
+}
+.col-2__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .contact-hero__section {
+    grid-template-columns: 1fr;
+  }
 }
 
 

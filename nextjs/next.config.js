@@ -5,7 +5,8 @@ const nextConfig = {
                 'images.unsplash.com',
                 'media.licdn.com',
                 'media.istockphoto.com',
-                'media.geeksforgeeks.org'
+                'media.geeksforgeeks.org',
+                'avatars.githubusercontent.com'
             ],
         
       },

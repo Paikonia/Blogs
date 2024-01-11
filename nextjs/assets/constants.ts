@@ -25,11 +25,11 @@ export const footerSocials = [
           items: [
               {
                   title: 'Fullstack development',
-                  slug: '/company/about',
+                  slug: '/about',
               },
               {
                   title: 'Home page',
-                  slug: '/landing-pages/landing-2',
+                  slug: '/',
               },
           ],
       },
@@ -38,7 +38,7 @@ export const footerSocials = [
           items: [
               {
                   title: 'About',
-                  slug: '/company/about',
+                  slug: '/about',
               },
               {
                   title: 'Blog',
@@ -46,7 +46,7 @@ export const footerSocials = [
               },
               {
                   title: 'Contact',
-                  slug: '/company/contact',
+                  slug: '/contact',
               },
           ],
       },

@@ -2,7 +2,7 @@
 import Container from "./Container";
 import Image from 'next/image'
 const Hero = () => {
-  const ProfileImage = 'https://media.licdn.com/media/AAYQAQSOAAgAAQAAAAAAAB-zrMZEDXI2T62PSuT6kpB6qg.png';
+  const ProfileImage = 'https://avatars.githubusercontent.com/u/60845728?v=4';
   return (
     <Container narrow={true}>
       <section className="hero-section__section">

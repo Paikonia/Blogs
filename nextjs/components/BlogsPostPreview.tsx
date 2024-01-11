@@ -13,6 +13,7 @@ export type PostType = {
   href: string;
   desc: string;
   id: string;
+  date: string;
 };
 
 type PreviewProps = {

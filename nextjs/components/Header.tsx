@@ -68,7 +68,7 @@ const Navbar = ({
         )}
       </div>
       <div className="header-action-item__container">
-        <Link className={"btn-header"} href="/company/contact">
+        <Link className={"btn-header"} href="/contact">
           Get in touch
         </Link>
       </div>
