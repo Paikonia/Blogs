@@ -251,20 +251,27 @@ footer {
   padding: 0;
   display: flex;
   list-style: none;
+  
 }
 .footer-socials__item {
   margin-right: 0.5rem;
+  
+}
+.footer-socials__link {
+  color: #ffecd9;
 }
 .footer-link__list {
   margin: 0;
   padding: 0;
   list-style: none;
+  
 }
 .footer-link__list li {
   margin-bottom: 0.5rem;
 }
 .footer-link__list li a {
   text-decoration: none;
+  color: #ffecd9;
 }
 .footer-link__list li a:hover {
   opacity: 0.84;

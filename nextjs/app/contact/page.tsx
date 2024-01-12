@@ -7,13 +7,13 @@ const ContactUs = () => {
       <section className="contact-hero__section">
         <div className="contact-hero__text-section">
           <h1>Contact Us</h1>
-          <p>This for will allow you to reach my inbox that</p>
+          <p>This infor will allow you to reach my inbox.</p>
           <div>
             <p>
-              <em>
+              {/* <em>
                 <a href="tel:+256740388432">(256) 740 388 432</a>
               </em>{" "}
-              •{" "}
+              •{" "} */}
               <em>
                 <a href="patrickaiko@aikosnotes.info">
                   patrickaiko@aikosnotes.info

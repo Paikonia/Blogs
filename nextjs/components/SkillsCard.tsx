@@ -1,19 +1,21 @@
-import React from 'react'
+import React from "react";
 
-type SkillCardProps = {
-    title: string
+export type SkillCardProps = {
+  title: string;
+  description: string;
+  Proficiency: string;
+};
 
-}
-
-const SkillsCard = ({ title }:SkillCardProps) => {
+const SkillsCard = ({ title, description, Proficiency }: SkillCardProps) => {
   return (
-    <div className="feature-card__card">
-        <div className="featured-card__content">
-          <h4 className="feature-card__title">{title}</h4>
-        </div>
-
+    <div className="feature-card__card p-4">
+      <div className="featured-card__content flex-row flex justify-between">
+        <h4>{title}</h4>
+        <p>Proficiency: {Proficiency}</p>
+      </div>
+      <p>{description}</p>
     </div>
-  )
-}
+  );
+};
 
-export default SkillsCard
+export default SkillsCard;

@@ -1,9 +1,11 @@
 import Container from "@/components/Container";
+import SkillsCard, { SkillCardProps } from "@/components/SkillsCard";
 import TextSection from "@/components/TextSection";
 import Image from "next/image";
 import React from "react";
 
 const About = () => {
+  
   return (
     <Container narrow={true}>
       <div className="hero-section__section">
@@ -24,13 +26,7 @@ const About = () => {
         </div>
       </div>
       <TextSection>
-        <div>
-          <h5>Education</h5>
-        </div>
-        <div>
-          <h5>Data on Skills</h5>
-          
-        </div>
+        <div></div>
       </TextSection>
     </Container>
   );

@@ -3,15 +3,15 @@
 import Link from "next/link";
 import Container from "./Container";
 export type FooterSocial = {
-  url:string;
+  url: string;
   name: string;
-  icon:string
-}
+  icon: string;
+};
 
 export type FooterlistType = {
-  title:string;
-  items: {slug:string, title: string}[]
-}
+  title: string;
+  items: { slug: string; title: string }[];
+};
 
 type FooterProps = {
   footerSocials: FooterSocial[];
@@ -19,12 +19,10 @@ type FooterProps = {
   copyrightName: string;
 };
 
-
-const Footer:React.FC<FooterProps> = ({
+const Footer: React.FC<FooterProps> = ({
   footerSocials,
   footerLists,
   copyrightName,
-  
 }: FooterProps) => {
   return (
     <footer>
@@ -44,7 +42,7 @@ const Footer:React.FC<FooterProps> = ({
                     className="footer-socials__link"
                     title={`Open ${social.name} profile`}
                   >
-                    {/* {getIcon(social.icon)} */} {social.icon}
+                    {social.icon}
                   </Link>
                 </li>
               ))}
@@ -58,7 +56,9 @@ const Footer:React.FC<FooterProps> = ({
               <ul className="footer-link__list">
                 {list.items.map((item) => (
                   <li key={item.slug}>
-                    <Link href={item.slug}>{item.title}</Link>
+                    <Link className="link-color" href={item.slug}>
+                      {item.title}
+                    </Link>
                   </li>
                 ))}
               </ul>
