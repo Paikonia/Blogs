@@ -17,11 +17,12 @@ export const getPostMetadata = (): PostType[] => {
       href: "/blogs/" + t,
       id: t,
       featuredImage: frontmatter.data.featuredImage,
-      date: frontmatter.data.date
+      date: frontmatter.data.date,
+      published: frontmatter.data.published
     };
   });
 
-  return ret;
+  return ret.filter(r => r.published);
 };
 
 export const getPostContent = (slug: string) => {

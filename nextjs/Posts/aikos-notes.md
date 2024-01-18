@@ -3,6 +3,7 @@ title: 'Aikos notes.'
 desc: 'An introduction to my projects, documentations and thoughts on science and technology'
 date: '2024-01-10'
 featuredImage: '/images/profile.jpg'
+published: true
 ---
 
 

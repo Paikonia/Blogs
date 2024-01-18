@@ -14,6 +14,7 @@ export type PostType = {
   desc: string;
   id: string;
   date: string;
+  published: boolean
 };
 
 type PreviewProps = {
